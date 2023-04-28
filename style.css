@@ -30,6 +30,10 @@ section {
     height:   
 }
 
+/* .btn-secondary {
+    grid-row-gap: 10%;
+} */
+
 .city-name-box {
     margin-top: 5px;
 }
