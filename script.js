@@ -31,7 +31,7 @@ function searchCity() {
         })
         .then(function (data) {
             console.log(data)
-            document.getElementById("date").textContent = "Date: " + data.list.dt + "DD/MM/YYYY"
+            document.getElementById("date").textContent = "Date: " + data.dt + "DD/MM/YYYY"
             document.getElementById("temperature").textContent = "Temp: " + data.main.temp + "°C"
             document.querySelector("#wind").textContent = "Wind: " + data.wind.speed + "kph"
             document.querySelector("#humidity").textContent = "Humidity: " + data.main.humidity + "%"
