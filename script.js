@@ -3,12 +3,15 @@ function searchCity() {
     var searchCity = document.querySelector("#cityName").value
 
     var citySearch = JSON.parse(localStorage.getItem("searchHistory")) ||[]
+    document.querySelector("#city-name").innerHTML=""
+    if (!citySearch.includes(searchCity)){
     citySearch.push(searchCity)
     localStorage.setItem("searchHistory", JSON.stringify(citySearch))
- 
+    }
     for (let i = 0; i < citySearch.length; i++) {
         var btn = document.createElement("button")
         var li = document.createElement("li")
+
         btn.textContent = citySearch[i]
         li.appendChild(btn)
         document.querySelector("#city-name").appendChild(li)
@@ -88,4 +91,3 @@ document.querySelector(".btn").addEventListener("click", searchCity)
 //local storage???
 
 //fetch(querURL)???
-
