@@ -1,6 +1,6 @@
 body {
     font-family: 'Schibsted Grotesk', sans-serif;
-    margin: 10px;
+    margin: 15px;
 }
 
 .history{
@@ -18,25 +18,42 @@ section {
 .header {
     display: flex;
     justify-content: center;
-    
 }
 
 .search-panel {
     width: 25%;
-    margin: 10px 20px 0 10px;
-    padding: 10px 0 10px 10px;
-    background-color: #DCDCDC;
+    margin: 10px 20px 10px 10px;
+    padding: 10px;
+    background-color: #d2cfca;
 }
 
+.col-8 {
+    border-radius: 1px;
+}
 .search-button-panel {
     margin-left: 0px;
     width: 25%;
     height:   
 }
 
-/* .btn-secondary {
-    grid-row-gap: 10%;
-} */
+.btn {
+   margin-top: 8px;
+   border-radius: 2px;
+   display: flex;
+}
+
+h4 {
+    padding: 5px;
+}
+
+.col {
+    background-color: #d2cfca;
+    padding-top: 15px;
+}
+
+.row {
+    
+}
 
 .city-name-box {
     margin-top: 5px;
@@ -52,8 +69,7 @@ section {
 }
 
 .current-result-panel {
-    border: 1px solid #C0C0C0;
-    border-right: none;
+    border: 3px solid #353741;
     padding-left: 10px;
     padding-bottom: 30px;
 }
