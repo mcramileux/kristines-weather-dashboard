@@ -83,3 +83,10 @@ function getCurrentForecast() {
 
 }
 document.querySelector(".btn").addEventListener("click", searchCity)
+
+document.querySelector("#cityName").addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+        e.preventDefault();
+        searchCity()
+    }
+});
