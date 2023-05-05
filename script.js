@@ -19,7 +19,6 @@ function searchCity() {
         btn.addEventListener("click", function(e){
             e.preventDefault()
             searchedCity.value=this.textContent
-            //copy 22 onwards until end brackets and replace all searchCity with this.Context//
         })
     }
 
@@ -84,10 +83,3 @@ function getCurrentForecast() {
 
 }
 document.querySelector(".btn").addEventListener("click", searchCity)
-
-
-//function listSearchCities???
-//function unixtime
-//local storage???
-
-//fetch(querURL)???
