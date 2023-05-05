@@ -27,11 +27,14 @@ This project is [MIT](https://choosealicense.com/licenses/mit/) licence.
 
 ## References
 - [Web Dev Simplified](https://www.youtube.com/watch?v=w0VEOghdMpQ) How To Build A Weather App In JavaScript Without Needing A Server
-- [W3S](https://www.w3schools.com/)
+- [W3S](https://www.w3schools.com/) CSS and Bootstrap techniques
+- [Unsplash](https://unsplash.com/s/photos/monochrome) use the photos to pick colors easily
+- [Bootstrap](https://getbootstrap.com/docs/5.3/) CSS Framework
+- [JQuery](https://jquery.com/)
+- [OpenWeather](https://openweathermap.org/forecast5) Weather API
 
 ## Acknowledgements and Credits
 - Jacob Carver - weekly tutor
-- 
 - 
 
 ## Author
