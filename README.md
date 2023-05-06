@@ -31,11 +31,12 @@ This project is [MIT](https://choosealicense.com/licenses/mit/) licence.
 - [Unsplash](https://unsplash.com/s/photos/monochrome) use the photos to pick colors easily
 - [Bootstrap](https://getbootstrap.com/docs/5.3/) CSS Framework
 - [JQuery](https://jquery.com/)
+- [Dayjs](https://day.js.org/docs/en/display/unix-timestamp)
 - [OpenWeather](https://openweathermap.org/forecast5) Weather API
 
 ## Acknowledgements and Credits
 - Jacob Carver - weekly tutor
-- 
+- AskBCS Learning Assistants
 
 ## Author
 - © 2023 mcramileux
