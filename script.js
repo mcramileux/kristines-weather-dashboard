@@ -31,7 +31,8 @@ function searchCity() {
         })
         .then(function (data) {
             console.log(data)
-            document.getElementById("date").textContent = "Date: " + data.dt + "DD/MM/YYYY"
+            var date = dayjs().format('dddd, MMMM DD, YYYY h:mm:ss a');
+            document.getElementById("date").textContent = "Date: " + date
             document.getElementById("temperature").textContent = "Temp: " + data.main.temp + "°C"
             document.querySelector("#wind").textContent = "Wind: " + data.wind.speed + "kph"
             document.querySelector("#humidity").textContent = "Humidity: " + data.main.humidity + "%"
@@ -44,7 +45,7 @@ function searchCity() {
                 })
                 .then(function (data) {
                     console.log(data)
-                    document.getElementById("date-1").textContent = "Date: " + data.list[3].dt_txt + "DD/MM/YYYY"
+                    document.getElementById("date-1").textContent = "Date: " + data.list[3].dt_txt + "dddd, MMMM D, YYYY"
                     document.getElementById("temperature-1").textContent = "Temp: " + data.list[3].main.temp + "°C"
                     document.querySelector("#wind-1").textContent = "Wind: " + data.list[3].wind.speed + "kph"
                     document.querySelector("#humidity-1").textContent = "Humidity: " + data.list[3].main.humidity + "%"
