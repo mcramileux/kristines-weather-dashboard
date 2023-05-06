@@ -31,7 +31,7 @@ function searchCity() {
         })
         .then(function (data) {
             console.log(data)
-            var date = dayjs.unix(1683373665).format('dddd, MMMM DD, YYYY h:mm:ss a');
+            var date = dayjs().format('DD/MM/YYYY (dddd)');
             document.getElementById("date").textContent = "Date: " + date
             document.getElementById("temperature").textContent = "Temp: " + data.main.temp + "°C"
             document.querySelector("#wind").textContent = "Wind: " + data.wind.speed + "kph"
@@ -45,31 +45,31 @@ function searchCity() {
                 })
                 .then(function (data) {
                     console.log(data)
-                    document.getElementById("date-1").textContent = "Date: " + data.list[3].dt_txt + " dddd, MMMM D, YYYY "
+                    document.getElementById("date-1").textContent = "Date: " + data.list[3].date 
                     document.getElementById("temperature-1").textContent = "Temp: " + data.list[3].main.temp + "°C"
                     document.querySelector("#wind-1").textContent = "Wind: " + data.list[3].wind.speed + "kph"
                     document.querySelector("#humidity-1").textContent = "Humidity: " + data.list[3].main.humidity + "%"
                     document.querySelector("#icon-1").src = "https://openweathermap.org/img/wn/"+data.list[3].weather[0].icon+"@2x.png"
 
-                    document.getElementById("date-2").textContent = "Date: " + data.list[4].dt_txt + "DD/MM/YYYY"
+                    document.getElementById("date-2").textContent = "Date: " + data.list[4].date 
                     document.getElementById("temperature-2").textContent = "Temp: " + data.list[4].main.temp + "°C"
                     document.querySelector("#wind-2").textContent = "Wind: " + data.list[4].wind.speed + "kph"
                     document.querySelector("#humidity-2").textContent = "Humidity: " + data.list[4].main.humidity + "%"
                     document.querySelector("#icon-2").src = "https://openweathermap.org/img/wn/"+data.list[4].weather[0].icon+"@2x.png"
 
-                    document.getElementById("date-3").textContent = "Date: " + data.list[5].dt_txt + "DD/MM/YYYY"
+                    document.getElementById("date-3").textContent = "Date: " + data.list[5].date 
                     document.getElementById("temperature-3").textContent = "Temp: " + data.list[5].main.temp + "°C"
                     document.querySelector("#wind-3").textContent = "Wind: " + data.list[5].wind.speed + "kph"
                     document.querySelector("#humidity-3").textContent = "Humidity: " + data.list[5].main.humidity + "%"
                     document.querySelector("#icon-3").src = "https://openweathermap.org/img/wn/"+data.list[5].weather[0].icon+"@2x.png"
 
-                    document.getElementById("date-4").textContent = "Date: " + data.list[6].dt_txt + "DD/MM/YYYY"
+                    document.getElementById("date-4").textContent = "Date: " + data.list[6].date 
                     document.getElementById("temperature-4").textContent = "Temp: " + data.list[6].main.temp + "°C"
                     document.querySelector("#wind-4").textContent = "Wind: " + data.list[6].wind.speed + "kph"
                     document.querySelector("#humidity-4").textContent = "Humidity: " + data.list[6].main.humidity + "%"
                     document.querySelector("#icon-4").src = "https://openweathermap.org/img/wn/"+data.list[6].weather[0].icon+"@2x.png"
 
-                    document.getElementById("date-5").textContent = "Date: " + data.list[7].dt_txt + "DD/MM/YYYY"
+                    document.getElementById("date-5").textContent = "Date: " + data.list[7].date 
                     document.getElementById("temperature-5").textContent = "Temp: " + data.list[7].main.temp + "°C"
                     document.querySelector("#wind-5").textContent = "Wind: " + data.list[7].wind.speed + "kph"
                     document.querySelector("#humidity-5").textContent = "Humidity: " + data.list[7].main.humidity + "%"
