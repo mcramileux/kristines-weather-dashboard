@@ -95,9 +95,12 @@ document.querySelector("#cityName").addEventListener("keydown", function (e) {
     }
 });
 
-// Get the element you want to remove the class from
-var myElement = document.querySelector('#myElementId');
+//Get the elements to remove the class from
+var currentResult = document.querySelector('.currentResultPanel');
+var forecastColumn = document.querySelector('.forecastColumn');
+var footer = document.querySelector('.footer');
 
-// Remove a class from the element
-myElement.classList.remove('myClass');
-
+searchCity();
+document.querySelector(".currentResultPanel").style = undefined;
+document.querySelector(".forecastColumn").style = undefined;
+document.querySelector(".footer").style = undefined;
