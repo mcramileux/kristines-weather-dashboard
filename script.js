@@ -95,4 +95,9 @@ document.querySelector("#cityName").addEventListener("keydown", function (e) {
     }
 });
 
+// Get the element you want to remove the class from
+var myElement = document.querySelector('#myElementId');
+
+// Remove a class from the element
+myElement.classList.remove('myClass');
 

@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
   <header class="p-3 mb-2 bg-dark text-white">
@@ -31,7 +32,7 @@
             <div class="col-8 search-field">
               <input type="text" class="form-control" id="cityName" placeholder="City Name">
             </div>
-            <div class="col-3 search-button-panel">
+            <div class="col-25 search-button-panel">
               <button type="button" class="btn btn-secondary search">Search</button>
             </div>
           </div>
@@ -45,7 +46,7 @@
     </section>
     <!--Main Search Content-->
     <section class="city-result-panel">
-      <div class="current-result-panel">
+      <div class="current-result-panel" style="display: none">
         <div class="name-details">
           <h3 id="city-name"></h3>
           <div class="d-flex justify-content-start align-content-end">
@@ -61,11 +62,11 @@
           <img  id="icon">
         </div>
       </div>
-      <div class="forecast-column">
+      <div class="forecast-column" style="display: none">
         <h4>5-Day Forecast:</h4>
           <div class="container-fluid mt-2">
-             <div class="row row-cols-small-5">
-               
+             <div class="row row-cols-small-5" style="display: none">
+              
             <div class="col">
               <p class="current-details" id="date-1"></p>
               <p class="current-details" id="temperature-1"></p>
@@ -111,12 +112,14 @@
     </section>
   </main>
 
-  <footer class="p-3 mb-2 bg-dark text-white">
+  <footer class="p-3 mb-2 bg-dark text-white" style="display: none">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <p class="mb-0">&copy; 2023 mcramileux</p>
         </div>
+      </div>
+    </div>    
   </footer>
 
   <!--JQuery Link-->

@@ -1,6 +1,7 @@
 body {
     font-family: 'Schibsted Grotesk', sans-serif;
     margin: 15px;
+    font-size:20px;
 }
 
 .history {
@@ -40,14 +41,17 @@ section {
     border-radius: 1px;
 }
 .search-button-panel {
-    margin-left: 0px;
     width: 25%;
 }
 
 .btn {
-   margin-top: 8px;
+   /* margin-top: 8px; */
    border-radius: 2px;
+   margin: 10px;
    display: flex;
+   height: 40px;
+   width: 250%;
+   margin
 }
 
 h4 {
@@ -56,10 +60,13 @@ h4 {
 
 .col {
     background-color: #d2cfca;
-    padding-top: 15px;
     display: grid;
+    margin: 6px;
     grid-template-columns:auto;
     padding: 12px 15px 0px;
+    border-style: solid;
+    border-width: 3px;
+    
 }
 
 .city-name-box {
