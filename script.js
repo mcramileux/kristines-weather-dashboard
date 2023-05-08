@@ -79,13 +79,13 @@ function searchCity() {
         })
 }
 
-function getCityForecast() {
+// function getCityForecast() {
 
-}
+// }
 
-function getCurrentForecast() {
+// function getCurrentForecast() {
 
-}
+// }
 document.querySelector(".btn").addEventListener("click", searchCity)
 
 document.querySelector("#cityName").addEventListener("keydown", function (e) {
@@ -96,11 +96,52 @@ document.querySelector("#cityName").addEventListener("keydown", function (e) {
 });
 
 //Get the elements to remove the class from
-var currentResult = document.querySelector('.currentResultPanel');
-var forecastColumn = document.querySelector('.forecastColumn');
-var footer = document.querySelector('.footer');
+// var currentResult = document.querySelector('.currentResultPanel');
+// var forecastColumn = document.querySelector('.forecastColumn');
+// var footer = document.querySelector('.footer');
 
-searchCity();
-document.querySelector(".currentResultPanel").style = undefined;
-document.querySelector(".forecastColumn").style = undefined;
-document.querySelector(".footer").style = undefined;
+// searchCity();
+// document.querySelector(".currentResultPanel").style = undefined;
+// document.querySelector(".forecastColumn").style = undefined;
+// document.querySelector(".footer").style = undefined;
+
+//formatting dates using moment.js
+
+//Searching for newCitySearch
+function newCitySearch () {
+
+}
+
+//construct currentWeatherUrl using searchCity and apiKey
+// fetch currentWeatherUrl
+//     .then parse JSON response
+//     .then process and display weather data
+
+//To fix this, you need to set the display style of these elements to "block" after a search is made.
+// Pseudocode:
+// set display style of currentResultPanel to "block"
+// set display style of forecastColumn to "block"
+// set display style of footer to "block"
+
+// Define variables for the result panel, forecast column, and footer
+const currentResultPanel = document.getElementById("current-result-panel");
+const forecastColumn = document.getElementById("forecast-column");
+const footer = document.getElementById("footer");
+
+// Set the display style of the elements to "none" initially
+currentResultPanel.style.display = "none";
+forecastColumn.style.display = "none";
+footer.style.display = "none";
+
+// When a search is made, set the display style of the elements to "block"
+function handleSearch() {
+  currentResultPanel.style.display = "block";
+  forecastColumn.style.display = "block";
+  footer.style.display = "block";
+
+  // Add code here to handle the search
+}
+
+// Add an event listener to the search button to call the handleSearch function when clicked
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", handleSearch);
