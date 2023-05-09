@@ -29,14 +29,26 @@ section {
 }
 .city-name-box {
     padding: 1px;
-    margin: 2px;
-    
+    margin: 2px; 
 }
 
 .list-group {
     padding: 0.8px;
     align-items: flex-start;
+    background-color: black;
+    width:300px;
+    justify-items: inherit;
+
 } 
+
+.list-group.history li {
+    margin: 3px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+}
+
 .col-8 {
     border-radius: 1px;
 }
@@ -45,13 +57,11 @@ section {
 }
 
 .btn {
-   /* margin-top: 8px; */
    border-radius: 2px;
    margin: 10px;
    display: flex;
    height: 40px;
    width: 250%;
-   margin
 }
 
 h4 {
