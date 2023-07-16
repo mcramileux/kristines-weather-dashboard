@@ -52,7 +52,8 @@ function searchCity() {
             document.querySelector("#wind").textContent = "Wind: " + data.wind.speed + "kph"
             document.querySelector("#humidity").textContent = "Humidity: " + data.main.humidity + "%"
             document.querySelector("#icon").src = "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png"
-            
+            document.querySelector("#forecast").textContent = "Forecast: " + data.weather[0].description
+
             fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&appid=1874cb6ef3fe4f96e520929bdea63f63&units=metric")
                 .then(function (res) {
                     return res.json(
@@ -66,30 +67,35 @@ function searchCity() {
                     document.querySelector("#wind-1").textContent = "Wind: " + data.list[8].wind.speed + "kph"
                     document.querySelector("#humidity-1").textContent = "Humidity: " + data.list[8].main.humidity + "%"
                     document.querySelector("#icon-1").src = "https://openweathermap.org/img/wn/"+data.list[8].weather[0].icon+"@2x.png"
+                    document.querySelector("#forecast-1").textContent = "Forecast: " + data.list[8].weather[0].description
 
                     document.getElementById("date-2").textContent = "Date: " + formatDate(data.list[16].dt_txt);
                     document.getElementById("temperature-2").textContent = "Temp: " + data.list[16].main.temp + "°C"
                     document.querySelector("#wind-2").textContent = "Wind: " + data.list[16].wind.speed + "kph"
                     document.querySelector("#humidity-2").textContent = "Humidity: " + data.list[16].main.humidity + "%"
                     document.querySelector("#icon-2").src = "https://openweathermap.org/img/wn/"+data.list[16].weather[0].icon+"@2x.png"
+                    document.querySelector("#forecast-2").textContent = "Forecast: " + data.list[16].weather[0].description
 
                     document.getElementById("date-3").textContent = "Date: " + formatDate(data.list[24].dt_txt);
                     document.getElementById("temperature-3").textContent = "Temp: " + data.list[24].main.temp + "°C"
                     document.querySelector("#wind-3").textContent = "Wind: " + data.list[24].wind.speed + "kph"
                     document.querySelector("#humidity-3").textContent = "Humidity: " + data.list[24].main.humidity + "%"
                     document.querySelector("#icon-3").src = "https://openweathermap.org/img/wn/"+data.list[24].weather[0].icon+"@2x.png"
+                    document.querySelector("#forecast-3").textContent = "Forecast: " + data.list[24].weather[0].description
 
                     document.getElementById("date-4").textContent = "Date: " + formatDate(data.list[32].dt_txt);
                     document.getElementById("temperature-4").textContent = "Temp: " + data.list[32].main.temp + "°C"
                     document.querySelector("#wind-4").textContent = "Wind: " + data.list[32].wind.speed + "kph"
                     document.querySelector("#humidity-4").textContent = "Humidity: " + data.list[32].main.humidity + "%"
                     document.querySelector("#icon-4").src = "https://openweathermap.org/img/wn/"+data.list[32].weather[0].icon+"@2x.png"
+                    document.querySelector("#forecast-4").textContent = "Forecast: " + data.list[32].weather[0].description
 
                     document.getElementById("date-5").textContent = "Date: " + formatDate(data.list[39].dt_txt);
                     document.getElementById("temperature-5").textContent = "Temp: " + data.list[39].main.temp + "°C"
                     document.querySelector("#wind-5").textContent = "Wind: " + data.list[39].wind.speed + "kph"
                     document.querySelector("#humidity-5").textContent = "Humidity: " + data.list[39].main.humidity + "%"
                     document.querySelector("#icon-5").src = "https://openweathermap.org/img/wn/"+data.list[39].weather[0].icon+"@2x.png"
+                    document.querySelector("#forecast-5").textContent = "Forecast: " + data.list[39].weather[0].description
                     document.querySelector(".begin").classList.remove("begin");
                 })
         })
