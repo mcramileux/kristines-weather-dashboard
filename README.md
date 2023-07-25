@@ -29,11 +29,12 @@ The user has the control what city he/she wishes to check as this is powered by 
 
 - Searched Cities: comprises of what the user have searched.
 
-<img width="1455" alt="searchedcities" src="https://github.com/mcramileux/kristines-weather-dashboard/assets/122607160/4e95378c-969d-4b83-8939-cb37963e4166">
+![dashboard](https://github.com/mcramileux/kristines-weather-dashboard/assets/122607160/5cf25f3b-a5c9-408f-86ef-3eda9acfc33a)
 
 - Searched Cities with local storage: showing that the search cities that the user did will be saved in the Local storage Application.
 
-<img width="1445" alt="localstorage" src="https://github.com/mcramileux/kristines-weather-dashboard/assets/122607160/a727ecfc-c5b7-43fa-bd3d-98d16244513c">
+![local-storage](https://github.com/mcramileux/kristines-weather-dashboard/assets/122607160/eb352396-8d6e-430b-9250-714c82f8bfd2)
+
 
 
 ## Live Site 
